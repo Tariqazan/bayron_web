@@ -147,8 +147,22 @@
     right: 0;
 }
 
+.footer-text {
+    color: #a6a6a6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.side-text {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: rotate(-90deg);
+    color: #a6a6a6;
+    font-size: .65rem;
+}
+
 .banner {
-    position: relative;
     background-image: url('../media/cover-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,6 +223,7 @@
 
 .logo,
 .corporation-logo {
+    position: relative;
     z-index: 3;
 }
 
@@ -330,7 +345,7 @@
 
 @keyframes imgSlideUp {
     from {
-        transform: translateY(100px);
+        transform: translateY(80px);
     }
 
     to {
@@ -362,7 +377,7 @@
 
 @keyframes slideDownText {
     from {
-        transform: translateY(-100px);
+        transform: translateY(-80px);
     }
 
     to {
@@ -373,15 +388,20 @@
 .bayron-partners-corporation-content .title {
     font-size: 5rem;
     text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 60px;
 }
 
 .bayron-partners-corporation-content .subtitle {
     font-size: 1.625rem;
+    margin-left: 40px;
 }
 
 .bayron-partners-corporation-content .description {
     font-size: 0.75rem;
     font-weight: 200;
+    line-height: 25px;
+    color: #d9d9d9;
 }
 
 .product-info_bg {
@@ -506,7 +526,7 @@
 .item-img img {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 400px;
     animation-name: imgSlideUp;
     animation-duration: 1s;
 }
@@ -627,8 +647,10 @@
 
 .footer {
     font-size: 0.67rem;
+    margin-top: 20px;
+    font-weight: 600;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 

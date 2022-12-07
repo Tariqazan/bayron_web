@@ -1,3 +1,4 @@
+
 // loading screen js
 var loadingScreen;
 
@@ -94,6 +95,17 @@ function scrollPage(e) {
         }
     } else {
         return false;
+    }
+    if (prev_id === "banner") {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("navigation_short_logo").style.display = "none";
+    }
+    else if (next_id === "info_1" || prev_id === "info_1") {
+        document.getElementById("navigation").style.display = "block";
+        document.getElementById("navigation_short_logo").style.display = "none";
+    } else {
+        document.getElementById("navigation").style.display = "none";
+        document.getElementById("navigation_short_logo").style.display = "block";
     }
 }
 

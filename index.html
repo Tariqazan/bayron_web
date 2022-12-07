@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body onload="loader()">
@@ -15,7 +17,7 @@
         <div id="loader"><img src="media/loading-img.jpg" alt=""></div>
     </div>
     <div id="main-body">
-        <div class="" id="navigation">
+        <div class="" id="navigation" style="display: none;">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <a class="navbar-brand" href="#">
                     <img src="media/bayron-corporation-white-bg.jpg" alt="">
@@ -37,10 +39,18 @@
                 </div>
             </nav>
         </div>
+        <div id="navigation_short_logo" style="display: none;">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="media/navbar-logo.png" alt="">
+                </a>
+            </nav>
+        </div>
+        <div class="side-text">BARYON PARTNERS CORPORATION</div>
         <section class="" id="banner">
             <div class="banner">
                 <div class="logo">
-                    <img src="media/logo.jpg" alt="logo">
+                    <img src="media/logo.png" alt="logo">
                 </div>
                 <div class="container">
                     <div class="banner-content">
@@ -51,7 +61,7 @@
                 <div class="overlay-banner"></div>
                 <div class="overlay-banner-right"></div>
                 <div class="corporation-logo">
-                    <img src="media/bayron-corporation.jpg" alt="">
+                    <img src="media/baryon_partner_corporation.png" alt="">
                 </div>
             </div>
         </section>
@@ -70,6 +80,7 @@
                     </div>
                 </div>
             </div>
+            <p class="mt-2 text-center footer-text">APPAREL</p>
         </section>
         <section class="" id="info_2">
             <div class="container-white_bg">
@@ -102,6 +113,7 @@
                     <img src="media/shirt.webp" alt="">
                 </div>
             </div>
+            <p class="mt-2 text-center footer-text">INTERIOR</p>
         </section>
         <section class="" id="info_3">
             <div class="container-white_bg">
@@ -120,6 +132,7 @@
                     <img src="media/dog.avif" alt="">
                 </div>
             </div>
+            <p class="mt-2 text-center footer-text">TABLEWARE</p>
         </section>
         <section class="" id="company_info">
             <div class="container-white_bg">
@@ -127,13 +140,15 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8">
-                                <p class="company-info_title nato-sans-regular">欧州を中心としたブランドの輸入およびライセンス製造販売</p>
-                                <p class="company-info_description nato-sans-regular">
-                                    日本総代理店として、海外ブランド(主にイギリス)を日本に広める事業をしています。業者様への輸入販売から、ブランドEC運営、国内でのライセンス製造販売なども展開しております。また保有する海外ネットワークを基盤に、国内ブランドの輸出事業も展開しております。
-                                </p>
-                                <div class="d-flex mt-4">
-                                    <button class="company-info_btn_blue">海外ブランド</button>
-                                    <button class="company-info_btn">国内ブランド</button>
+                                <div class="mt-5">
+                                    <p class="company-info_title nato-sans-regular">欧州を中心としたブランドの輸入およびライセンス製造販売</p>
+                                    <p class="company-info_description nato-sans-regular">
+                                        日本総代理店として、海外ブランド(主にイギリス)を日本に広める事業をしています。業者様への輸入販売から、ブランドEC運営、国内でのライセンス製造販売なども展開しております。また保有する海外ネットワークを基盤に、国内ブランドの輸出事業も展開しております。
+                                    </p>
+                                    <div class="d-flex mt-4">
+                                        <button class="company-info_btn_blue">海外ブランド</button>
+                                        <button class="company-info_btn">国内ブランド</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -286,6 +301,10 @@
         </div>
         <footer class="footer" id="footer">
             <p>@ 2021 ALL RIGHTS RESERVED. BARYON PARTNERS CORPORATION LTD</p>
+            <div class="d-flex justify-content-end">
+                <p>WEBSITE BY</p>
+                <p class="fw-bolder ms-3">MDC.</p>
+            </div>
         </footer>
     </div>
     <script src="js/main.js"></script>
